@@ -1,13 +1,14 @@
+******
 |logo|
 ******
 
 |licence|
 
-**NOTE:** This package is an experimental fork from `imate <ameli.github.io/imate>`_, and is under development. For production, use `imate <ameli.github.io/pyrand>`_.
+**NOTE:** This package is an experimental fork from `imate <ameli.github.io/imate>`_, and is under development.
 
-* `Documentation <https://ameli.github.io/pyrand/index.html>`_ 
+* `Documentation <https://ameli.github.io/pyrand/index.html>`_
 * `PyPi package <https://pypi.org/project/pyrand/>`_
-* `Anaconda Cloud <https://anaconda.org/s-ameli/traceinv>`_ 
+* `Anaconda Cloud <https://anaconda.org/s-ameli/traceinv>`_
 
 Install
 *******
@@ -34,6 +35,8 @@ Install
     cd pyrand
     python setup.py install
 
+.. |logo| image:: https://raw.githubusercontent.com/ameli/pyrand/main/docs/source/_static/images/icons/logo-pyrand-light.svg
+   :width: 200
 .. |licence| image:: https://img.shields.io/github/license/ameli/pyrand
    :target: https://opensource.org/licenses/BSD-3-Clause
 .. |pypi| image:: https://img.shields.io/pypi/v/pyrand
