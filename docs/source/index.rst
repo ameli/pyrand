@@ -5,7 +5,15 @@
 
 |deploy-docs|
 
-|project|, short for **I**\ mplicit **Ma**\ trix **T**\ race **E**\ stimator, is a modular and high-performance C++/CUDA library distributed as a Python package that provides scalable randomized algorithms for the computationally expensive matrix functions in machine learning.
+|project| is a modular and high-performance C++/CUDA library distributed as a Python package that provides scalable randomized algorithms for the computationally expensive matrix functions in machine learning.
+
+.. note::
+
+    |project| is an experimental fork from `imate <https://ameli.github.io/imate>`_ python package. |project| is under development and has not been released for production use.
+
+.. raw:: html
+
+    </br>
 
 .. .. toctree::
     :maxdepth: 1

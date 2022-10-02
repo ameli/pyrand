@@ -16,8 +16,8 @@
 import sys
 import time
 import numpy
-from imate.sample_matrices import toeplitz, toeplitz_trace
-from imate import trace
+from pyrand.sample_matrices import toeplitz, toeplitz_trace
+from pyrand import trace
 
 
 # ==============
@@ -118,7 +118,7 @@ def _test_trace_methods(K, matrix, gram, p, assume_matrix):
 
 def test_trace():
     """
-    A test for :mod:`imate.trace` sub-package.
+    A test for :mod:`pyrand.trace` sub-package.
     """
 
     matrix = {

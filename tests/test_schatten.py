@@ -16,8 +16,8 @@
 import sys
 import time
 import numpy
-from imate.sample_matrices import toeplitz, toeplitz_schatten
-from imate import schatten
+from pyrand.sample_matrices import toeplitz, toeplitz_schatten
+from pyrand import schatten
 
 
 # ==============

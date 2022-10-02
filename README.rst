@@ -4,7 +4,7 @@
 
 |licence|
 
-**NOTE:** This package is an experimental fork from `imate <ameli.github.io/imate>`_, and is under development.
+**NOTE:** This package is an experimental fork from `imate <https://ameli.github.io/imate>`_, and is under development.
 
 * `Documentation <https://ameli.github.io/pyrand/index.html>`_
 * `PyPi package <https://pypi.org/project/pyrand/>`_

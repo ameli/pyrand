@@ -14,7 +14,7 @@
 # =======
 
 import sys
-from imate.sample_matrices import toeplitz, toeplitz_logdet, toeplitz_trace, \
+from pyrand.sample_matrices import toeplitz, toeplitz_logdet, toeplitz_trace, \
         toeplitz_traceinv, toeplitz_schatten
 
 
@@ -24,7 +24,7 @@ from imate.sample_matrices import toeplitz, toeplitz_logdet, toeplitz_trace, \
 
 def test_toeplitz():
     """
-    Test for :mod:`imate.sample_matrices.toeplitz` sub-package.
+    Test for :mod:`pyrand.sample_matrices.toeplitz` sub-package.
     """
 
     A = toeplitz(2, 1, size=20, gram=False, format='csr',  # noqa: F841

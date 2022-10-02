@@ -17,8 +17,8 @@ import sys
 import time
 import numpy
 import scipy.sparse
-from imate.sample_matrices import toeplitz, toeplitz_traceinv
-from imate import traceinv
+from pyrand.sample_matrices import toeplitz, toeplitz_traceinv
+from pyrand import traceinv
 
 
 # ==============
@@ -253,7 +253,7 @@ def _test_traceinv_methods(K, B, C, matrix, gram, p, assume_matrix):
 
 def test_traceinv():
     """
-    A test for :mod:`imate.traceinv` sub-package.
+    A test for :mod:`pyrand.traceinv` sub-package.
     """
 
     matrix_K = {
