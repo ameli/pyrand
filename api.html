@@ -213,6 +213,23 @@
   </a>
  </li>
 </ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="api/pyrand.logdet.eigenvalue.html">
+   pyrand.logdet(method=’eigenvalue’)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="api/pyrand.logdet.cholesky.html">
+   pyrand.logdet(method=’cholesky’)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="api/pyrand.logdet.slq.html">
+   pyrand.logdet(method=’slq’)
+  </a>
+ </li>
+</ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   traceinv
@@ -225,6 +242,28 @@
   </a>
  </li>
 </ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="api/pyrand.traceinv.eigenvalue.html">
+   pyrand.traceinv(method=’eigenvalue’)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="api/pyrand.traceinv.cholesky.html">
+   pyrand.traceinv(method=’cholesky’)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="api/pyrand.traceinv.hutchinson.html">
+   pyrand.traceinv(method=’hutchinson’)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="api/pyrand.traceinv.slq.html">
+   pyrand.traceinv(method=’slq’)
+  </a>
+ </li>
+</ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   trace
@@ -234,6 +273,23 @@
  <li class="toctree-l1">
   <a class="reference internal" href="generated/pyrand.trace.html">
    pyrand.trace
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="api/pyrand.trace.exact.html">
+   pyrand.trace(method=’exact’)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="api/pyrand.trace.eigenvalue.html">
+   pyrand.trace(method=’eigenvalue’)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="api/pyrand.trace.slq.html">
+   pyrand.trace(method=’slq’)
   </a>
  </li>
 </ul>
@@ -268,6 +324,48 @@
  <li class="toctree-l1">
   <a class="reference internal" href="generated/pyrand.InterpolateSchatten.html">
    pyrand.InterpolateSchatten
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="api/pyrand.InterpolateSchatten.ext.html">
+   pyrand.InterpolateSchatten(kind=’ext’)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="api/pyrand.InterpolateSchatten.eig.html">
+   pyrand.InterpolateSchatten(kind=’eig’)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="api/pyrand.InterpolateSchatten.mbf.html">
+   pyrand.InterpolateSchatten(kind=’mbf’)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="api/pyrand.InterpolateSchatten.imbf.html">
+   pyrand.InterpolateSchatten(kind=’imbf’)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="api/pyrand.InterpolateSchatten.rbf.html">
+   pyrand.InterpolateSchatten(kind=’rbf’)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="api/pyrand.InterpolateSchatten.crf.html">
+   pyrand.InterpolateSchatten(kind=’crf’)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="api/pyrand.InterpolateSchatten.spl.html">
+   pyrand.InterpolateSchatten(kind=’spl’)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="api/pyrand.InterpolateSchatten.rpf.html">
+   pyrand.InterpolateSchatten(kind=’rpf’)
   </a>
  </li>
 </ul>
@@ -530,6 +628,11 @@ the matrix.</p></li>
 <p>This function computes the log-determinant of <span class="math notranslate nohighlight">\(\mathbf{A}^p\)</span> or the Gramian matrix <span class="math notranslate nohighlight">\((\mathbf{A}^{\intercal} \mathbf{A})^p\)</span> where <span class="math notranslate nohighlight">\(p\)</span> is a real exponent.</p>
 <p>The <cite>pyrand.logdet</cite> function has the following methods:</p>
 <div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api/pyrand.logdet.eigenvalue.html">pyrand.logdet(method=’eigenvalue’)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/pyrand.logdet.cholesky.html">pyrand.logdet(method=’cholesky’)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/pyrand.logdet.slq.html">pyrand.logdet(method=’slq’)</a></li>
+</ul>
 </div>
 <table class="table">
 <thead>
@@ -541,19 +644,19 @@ the matrix.</p></li>
 </tr>
 </thead>
 <tbody>
-<tr class="row-even"><td><p><span class="xref std std-ref">eigenvalue</span></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="api/pyrand.logdet.eigenvalue.html#pyrand-logdet-eigenvalue"><span class="std std-ref">eigenvalue</span></a></p></td>
 <td><p>Eigenvalue decomposition</p></td>
 <td><p>Small <span class="math notranslate nohighlight">\(n &lt; 2^{12}\)</span></p></td>
 <td><p>Any</p></td>
 <td><p>Exact</p></td>
 </tr>
-<tr class="row-odd"><td><p><span class="xref std std-ref">cholesky</span></p></td>
+<tr class="row-odd"><td><p><a class="reference internal" href="api/pyrand.logdet.cholesky.html#pyrand-logdet-cholesky"><span class="std std-ref">cholesky</span></a></p></td>
 <td><p>Cholesky decomposition</p></td>
 <td><p>Moderate <span class="math notranslate nohighlight">\(n &lt; 2^{15}\)</span></p></td>
 <td><p>Symmetric Positive-definite</p></td>
 <td><p>Exact</p></td>
 </tr>
-<tr class="row-even"><td><p><span class="xref std std-ref">slq</span></p></td>
+<tr class="row-even"><td><p><a class="reference internal" href="api/pyrand.logdet.slq.html#pyrand-logdet-slq"><span class="std std-ref">slq</span></a></p></td>
 <td><p>Stochastic Lanczos Quadrature</p></td>
 <td><p>Large <span class="math notranslate nohighlight">\(n &gt; 2^{12}\)</span></p></td>
 <td><p>Any</p></td>
@@ -574,6 +677,12 @@ the matrix.</p></li>
 <p>This function computes the trace of <span class="math notranslate nohighlight">\(\mathbf{A}^{-p}\)</span> or the Gramian matrix <span class="math notranslate nohighlight">\((\mathbf{A}^{\intercal} \mathbf{A})^{-p}\)</span> where <span class="math notranslate nohighlight">\(p\)</span> is a positive real exponent.</p>
 <p>The <cite>pyrand.traceinv</cite> function has the following methods:</p>
 <div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api/pyrand.traceinv.eigenvalue.html">pyrand.traceinv(method=’eigenvalue’)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/pyrand.traceinv.cholesky.html">pyrand.traceinv(method=’cholesky’)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/pyrand.traceinv.hutchinson.html">pyrand.traceinv(method=’hutchinson’)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/pyrand.traceinv.slq.html">pyrand.traceinv(method=’slq’)</a></li>
+</ul>
 </div>
 <table class="table">
 <thead>
@@ -619,6 +728,11 @@ the matrix.</p></li>
 <p>This function computes the trace of <span class="math notranslate nohighlight">\(\mathbf{A}^p\)</span> or the Gramian matrix <span class="math notranslate nohighlight">\((\mathbf{A}^{\intercal} \mathbf{A})^p\)</span> where <span class="math notranslate nohighlight">\(p\)</span> is a positive real exponent.</p>
 <p>The <cite>pyrand.trace</cite> function has the following methods:</p>
 <div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api/pyrand.trace.exact.html">pyrand.trace(method=’exact’)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/pyrand.trace.eigenvalue.html">pyrand.trace(method=’eigenvalue’)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/pyrand.trace.slq.html">pyrand.trace(method=’slq’)</a></li>
+</ul>
 </div>
 <table class="table">
 <thead>
@@ -679,6 +793,16 @@ the matrix.</p></li>
 </table>
 <p>Each of the above interpolator classes have the following interpolation methods:</p>
 <div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="api/pyrand.InterpolateSchatten.ext.html">pyrand.InterpolateSchatten(kind=’ext’)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/pyrand.InterpolateSchatten.eig.html">pyrand.InterpolateSchatten(kind=’eig’)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/pyrand.InterpolateSchatten.mbf.html">pyrand.InterpolateSchatten(kind=’mbf’)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/pyrand.InterpolateSchatten.imbf.html">pyrand.InterpolateSchatten(kind=’imbf’)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/pyrand.InterpolateSchatten.rbf.html">pyrand.InterpolateSchatten(kind=’rbf’)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/pyrand.InterpolateSchatten.crf.html">pyrand.InterpolateSchatten(kind=’crf’)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/pyrand.InterpolateSchatten.spl.html">pyrand.InterpolateSchatten(kind=’spl’)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api/pyrand.InterpolateSchatten.rpf.html">pyrand.InterpolateSchatten(kind=’rpf’)</a></li>
+</ul>
 </div>
 <table class="table">
 <thead>

@@ -54,8 +54,8 @@
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="pyrand.trace" href="pyrand.trace.html" />
-    <link rel="prev" title="pyrand.logdet" href="pyrand.logdet.html" />
+    <link rel="next" title="pyrand.traceinv(method=’eigenvalue’)" href="../api/pyrand.traceinv.eigenvalue.html" />
+    <link rel="prev" title="pyrand.logdet(method=’slq’)" href="../api/pyrand.logdet.slq.html" />
     <script defer data-domain="docs.scipy.org" src="https://views.scientific-python.org/js/script.js"></script>
 
     <!-- Adobe Embed API -->
@@ -213,6 +213,23 @@
   </a>
  </li>
 </ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../api/pyrand.logdet.eigenvalue.html">
+   pyrand.logdet(method=’eigenvalue’)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../api/pyrand.logdet.cholesky.html">
+   pyrand.logdet(method=’cholesky’)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../api/pyrand.logdet.slq.html">
+   pyrand.logdet(method=’slq’)
+  </a>
+ </li>
+</ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   traceinv
@@ -225,6 +242,28 @@
   </a>
  </li>
 </ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../api/pyrand.traceinv.eigenvalue.html">
+   pyrand.traceinv(method=’eigenvalue’)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../api/pyrand.traceinv.cholesky.html">
+   pyrand.traceinv(method=’cholesky’)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../api/pyrand.traceinv.hutchinson.html">
+   pyrand.traceinv(method=’hutchinson’)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../api/pyrand.traceinv.slq.html">
+   pyrand.traceinv(method=’slq’)
+  </a>
+ </li>
+</ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   trace
@@ -234,6 +273,23 @@
  <li class="toctree-l1">
   <a class="reference internal" href="pyrand.trace.html">
    pyrand.trace
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../api/pyrand.trace.exact.html">
+   pyrand.trace(method=’exact’)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../api/pyrand.trace.eigenvalue.html">
+   pyrand.trace(method=’eigenvalue’)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../api/pyrand.trace.slq.html">
+   pyrand.trace(method=’slq’)
   </a>
  </li>
 </ul>
@@ -268,6 +324,48 @@
  <li class="toctree-l1">
   <a class="reference internal" href="pyrand.InterpolateSchatten.html">
    pyrand.InterpolateSchatten
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../api/pyrand.InterpolateSchatten.ext.html">
+   pyrand.InterpolateSchatten(kind=’ext’)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../api/pyrand.InterpolateSchatten.eig.html">
+   pyrand.InterpolateSchatten(kind=’eig’)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../api/pyrand.InterpolateSchatten.mbf.html">
+   pyrand.InterpolateSchatten(kind=’mbf’)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../api/pyrand.InterpolateSchatten.imbf.html">
+   pyrand.InterpolateSchatten(kind=’imbf’)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../api/pyrand.InterpolateSchatten.rbf.html">
+   pyrand.InterpolateSchatten(kind=’rbf’)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../api/pyrand.InterpolateSchatten.crf.html">
+   pyrand.InterpolateSchatten(kind=’crf’)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../api/pyrand.InterpolateSchatten.spl.html">
+   pyrand.InterpolateSchatten(kind=’spl’)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../api/pyrand.InterpolateSchatten.rpf.html">
+   pyrand.InterpolateSchatten(kind=’rpf’)
   </a>
  </li>
 </ul>
@@ -472,7 +570,7 @@ an input  tuple <span class="math notranslate nohighlight">\(t = (t_1, \dots, t_
 <dt><strong>A</strong><span class="classifier">numpy.ndarray, scipy.sparse, <a class="reference internal" href="pyrand.Matrix.html#pyrand.Matrix" title="pyrand.Matrix"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyrand.Matrix</span></code></a>, or             <a class="reference internal" href="pyrand.AffineMatrixFunction.html#pyrand.AffineMatrixFunction" title="pyrand.AffineMatrixFunction"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyrand.AffineMatrixFunction</span></code></a></span></dt><dd><p>A non-singular sparse or dense matrix or linear operator. The linear
 operators <a class="reference internal" href="pyrand.Matrix.html#pyrand.Matrix" title="pyrand.Matrix"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyrand.Matrix</span></code></a> and <a class="reference internal" href="pyrand.AffineMatrixFunction.html#pyrand.AffineMatrixFunction" title="pyrand.AffineMatrixFunction"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyrand.AffineMatrixFunction</span></code></a>
 can be used only if <code class="docutils literal notranslate"><span class="pre">method=slq</span></code>. See details in
-<span class="xref std std-ref">slq method</span>. If <code class="docutils literal notranslate"><span class="pre">method=cholesky</span></code>, the
+<a class="reference internal" href="../api/pyrand.traceinv.slq.html#pyrand-traceinv-slq"><span class="std std-ref">slq method</span></a>. If <code class="docutils literal notranslate"><span class="pre">method=cholesky</span></code>, the
 matrix <cite>A</cite> should be positive-definite. If <code class="docutils literal notranslate"><span class="pre">method=slq</span></code> and
 <code class="docutils literal notranslate"><span class="pre">gram=False</span></code>, the input matrix <cite>A</cite> should be symmetric.</p>
 </dd>
@@ -501,10 +599,10 @@ details.</p>
 <dt><strong>method</strong><span class="classifier">{‘eigenvalue’, ‘cholesky’, ‘hutchinson’, ‘slq’},             default=’cholesky’</span></dt><dd><p>The method of computing trace. See documentation for each
 method:</p>
 <ul class="simple">
-<li><p><span class="xref std std-ref">eigenvalue</span></p></li>
-<li><p><span class="xref std std-ref">cholesky</span></p></li>
-<li><p><span class="xref std std-ref">hutchinson</span></p></li>
-<li><p><span class="xref std std-ref">slq</span></p></li>
+<li><p><a class="reference internal" href="../api/pyrand.traceinv.eigenvalue.html#pyrand-traceinv-eigenvalue"><span class="std std-ref">eigenvalue</span></a></p></li>
+<li><p><a class="reference internal" href="../api/pyrand.traceinv.cholesky.html#pyrand-traceinv-cholesky"><span class="std std-ref">cholesky</span></a></p></li>
+<li><p><a class="reference internal" href="../api/pyrand.traceinv.hutchinson.html#pyrand-traceinv-hutchinson"><span class="std std-ref">hutchinson</span></a></p></li>
+<li><p><a class="reference internal" href="../api/pyrand.traceinv.slq.html#pyrand-traceinv-slq"><span class="std std-ref">slq</span></a></p></li>
 </ul>
 </dd>
 <dt><strong>options</strong><span class="classifier"><cite>**kwargs</cite></span></dt><dd><p>Extra arguments that are specific to each method. See the documentation
@@ -538,7 +636,7 @@ of <cite>A</cite>.</p></li>
 is the <cite>nnz</cite> divided by size squared.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">num_inquiries</span></code>: <cite>int</cite>, The size of inquiries of each parameter
 of the linear operator <cite>A</cite>. If <cite>A</cite> is a matrix, this is always
-<cite>1</cite>. For more details see <span class="xref std std-ref">slq method</span>.</p></li>
+<cite>1</cite>. For more details see <a class="reference internal" href="../api/pyrand.traceinv.slq.html#pyrand-traceinv-slq"><span class="std std-ref">slq method</span></a>.</p></li>
 </ul>
 </dd>
 </dl>
@@ -603,16 +701,16 @@ and recompile the source code of the package.</p>
 <p><strong>Method of Computation:</strong></p>
 <p>See documentation for each method below.</p>
 <ul class="simple">
-<li><p><span class="xref std std-ref">eigenvalue</span>: uses spectral
+<li><p><a class="reference internal" href="../api/pyrand.traceinv.eigenvalue.html#pyrand-traceinv-eigenvalue"><span class="std std-ref">eigenvalue</span></a>: uses spectral
 decomposition. Suitable for small matrices (<span class="math notranslate nohighlight">\(n &lt; 2^{12}\)</span>). The
 solution is exact.</p></li>
-<li><p><span class="xref std std-ref">cholesky</span>: uses Cholesky decomposition.
+<li><p><a class="reference internal" href="../api/pyrand.traceinv.cholesky.html#pyrand-traceinv-cholesky"><span class="std std-ref">cholesky</span></a>: uses Cholesky decomposition.
 Suitable for moderate-size matrices (<span class="math notranslate nohighlight">\(n &lt; 2^{15}\)</span>). Can only be
 applied to positive-definite matrices. The solution is exact.</p></li>
-<li><p><span class="xref std std-ref">hutchinson</span>: uses stochastic Hutchinson
+<li><p><a class="reference internal" href="../api/pyrand.traceinv.hutchinson.html#pyrand-traceinv-hutchinson"><span class="std std-ref">hutchinson</span></a>: uses stochastic Hutchinson
 method, which is a randomized algorithm. Can be used on very large
 matrices (<span class="math notranslate nohighlight">\(n &gt; 2^{12}\)</span>). The solution is an approximation.</p></li>
-<li><p><span class="xref std std-ref">slq</span>: uses stochastic Lanczos quadrature
+<li><p><a class="reference internal" href="../api/pyrand.traceinv.slq.html#pyrand-traceinv-slq"><span class="std std-ref">slq</span></a>: uses stochastic Lanczos quadrature
 (SLQ), which is a randomized algorithm. Can be used on very large
 matrices (<span class="math notranslate nohighlight">\(n &gt; 2^{12}\)</span>). The solution is an approximation.</p></li>
 </ul>
@@ -767,7 +865,7 @@ to the SLQ method.</p>
 <p><strong>Matrix operator:</strong></p>
 <p>The following example uses an object of <a class="reference internal" href="pyrand.Matrix.html#pyrand.Matrix" title="pyrand.Matrix"><code class="xref py py-class docutils literal notranslate"><span class="pre">pyrand.Matrix</span></code></a>. Note that
 this can be only applied to <code class="docutils literal notranslate"><span class="pre">method=slq</span></code>. See further details in
-<span class="xref std std-ref">slq method</span>.</p>
+<a class="reference internal" href="../api/pyrand.traceinv.slq.html#pyrand-traceinv-slq"><span class="std std-ref">slq method</span></a>.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Import matrix operator</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">pyrand</span> <span class="kn">import</span> <span class="n">toeplitz</span><span class="p">,</span> <span class="n">traceinv</span><span class="p">,</span> <span class="n">Matrix</span>
 
@@ -788,7 +886,7 @@ this can be only applied to <code class="docutils literal notranslate"><span cla
 <div class="math notranslate nohighlight">
 \[t \mapsto \mathbf{A} + t \mathbf{I}\]</div>
 <p>Note that this can be only applied to <code class="docutils literal notranslate"><span class="pre">method=slq</span></code>. See further details
-in <span class="xref std std-ref">slq method</span>.</p>
+in <a class="reference internal" href="../api/pyrand.traceinv.slq.html#pyrand-traceinv-slq"><span class="std std-ref">slq method</span></a>.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Import affine matrix function</span>
 <span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">pyrand</span> <span class="kn">import</span> <span class="n">toeplitz</span><span class="p">,</span> <span class="n">traceinv</span><span class="p">,</span> <span class="n">AffineMatrixFunction</span>
 
@@ -818,17 +916,17 @@ in <span class="xref std std-ref">slq method</span>.</p>
               <footer class="bd-footer-article">
                   <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-  <a class='left-prev' id="prev-link" href="pyrand.logdet.html" title="previous page">
+  <a class='left-prev' id="prev-link" href="../api/pyrand.logdet.slq.html" title="previous page">
       <i class="fas fa-angle-left"></i>
       <div class="prev-next-info">
           <p class="prev-next-subtitle">previous</p>
-          <p class="prev-next-title">pyrand.logdet</p>
+          <p class="prev-next-title">pyrand.logdet(method=’slq’)</p>
       </div>
   </a>
-  <a class='right-next' id="next-link" href="pyrand.trace.html" title="next page">
+  <a class='right-next' id="next-link" href="../api/pyrand.traceinv.eigenvalue.html" title="next page">
   <div class="prev-next-info">
       <p class="prev-next-subtitle">next</p>
-      <p class="prev-next-title">pyrand.trace</p>
+      <p class="prev-next-title">pyrand.traceinv(method=’eigenvalue’)</p>
   </div>
   <i class="fas fa-angle-right"></i>
   </a>

@@ -55,7 +55,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="pyrand.InterpolateLogdet" href="pyrand.InterpolateLogdet.html" />
-    <link rel="prev" title="pyrand.trace" href="pyrand.trace.html" />
+    <link rel="prev" title="pyrand.trace(method=’slq’)" href="../api/pyrand.trace.slq.html" />
     <script defer data-domain="docs.scipy.org" src="https://views.scientific-python.org/js/script.js"></script>
 
     <!-- Adobe Embed API -->
@@ -213,6 +213,23 @@
   </a>
  </li>
 </ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../api/pyrand.logdet.eigenvalue.html">
+   pyrand.logdet(method=’eigenvalue’)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../api/pyrand.logdet.cholesky.html">
+   pyrand.logdet(method=’cholesky’)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../api/pyrand.logdet.slq.html">
+   pyrand.logdet(method=’slq’)
+  </a>
+ </li>
+</ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   traceinv
@@ -225,6 +242,28 @@
   </a>
  </li>
 </ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../api/pyrand.traceinv.eigenvalue.html">
+   pyrand.traceinv(method=’eigenvalue’)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../api/pyrand.traceinv.cholesky.html">
+   pyrand.traceinv(method=’cholesky’)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../api/pyrand.traceinv.hutchinson.html">
+   pyrand.traceinv(method=’hutchinson’)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../api/pyrand.traceinv.slq.html">
+   pyrand.traceinv(method=’slq’)
+  </a>
+ </li>
+</ul>
 <p aria-level="2" class="caption" role="heading">
  <span class="caption-text">
   trace
@@ -234,6 +273,23 @@
  <li class="toctree-l1">
   <a class="reference internal" href="pyrand.trace.html">
    pyrand.trace
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../api/pyrand.trace.exact.html">
+   pyrand.trace(method=’exact’)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../api/pyrand.trace.eigenvalue.html">
+   pyrand.trace(method=’eigenvalue’)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../api/pyrand.trace.slq.html">
+   pyrand.trace(method=’slq’)
   </a>
  </li>
 </ul>
@@ -268,6 +324,48 @@
  <li class="toctree-l1">
   <a class="reference internal" href="pyrand.InterpolateSchatten.html">
    pyrand.InterpolateSchatten
+  </a>
+ </li>
+</ul>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../api/pyrand.InterpolateSchatten.ext.html">
+   pyrand.InterpolateSchatten(kind=’ext’)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../api/pyrand.InterpolateSchatten.eig.html">
+   pyrand.InterpolateSchatten(kind=’eig’)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../api/pyrand.InterpolateSchatten.mbf.html">
+   pyrand.InterpolateSchatten(kind=’mbf’)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../api/pyrand.InterpolateSchatten.imbf.html">
+   pyrand.InterpolateSchatten(kind=’imbf’)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../api/pyrand.InterpolateSchatten.rbf.html">
+   pyrand.InterpolateSchatten(kind=’rbf’)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../api/pyrand.InterpolateSchatten.crf.html">
+   pyrand.InterpolateSchatten(kind=’crf’)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../api/pyrand.InterpolateSchatten.spl.html">
+   pyrand.InterpolateSchatten(kind=’spl’)
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../api/pyrand.InterpolateSchatten.rpf.html">
+   pyrand.InterpolateSchatten(kind=’rpf’)
   </a>
  </li>
 </ul>
@@ -485,26 +583,26 @@ passed to the following functions:</p>
 <ul class="simple">
 <li><p>If <span class="math notranslate nohighlight">\(p &gt; 0\)</span>, see options for <a class="reference internal" href="pyrand.trace.html#pyrand.trace" title="pyrand.trace"><code class="xref py py-func docutils literal notranslate"><span class="pre">pyrand.trace()</span></code></a>. In particular:</p>
 <ul>
-<li><p><span class="xref std std-ref">pyrand.trace.exact</span></p></li>
-<li><p><span class="xref std std-ref">pyrand.trace.eigenvalue</span></p></li>
-<li><p><span class="xref std std-ref">pyrand.trace.slq</span></p></li>
+<li><p><a class="reference internal" href="../api/pyrand.trace.exact.html#pyrand-trace-exact"><span class="std std-ref">pyrand.trace(method=’exact’)</span></a></p></li>
+<li><p><a class="reference internal" href="../api/pyrand.trace.eigenvalue.html#pyrand-trace-eigenvalue"><span class="std std-ref">pyrand.trace(method=’eigenvalue’)</span></a></p></li>
+<li><p><a class="reference internal" href="../api/pyrand.trace.slq.html#pyrand-trace-slq"><span class="std std-ref">pyrand.trace(method=’slq’)</span></a></p></li>
 </ul>
 </li>
 <li><p>If <span class="math notranslate nohighlight">\(p = 0\)</span>, see options for <a class="reference internal" href="pyrand.logdet.html#pyrand.logdet" title="pyrand.logdet"><code class="xref py py-func docutils literal notranslate"><span class="pre">pyrand.logdet()</span></code></a>. In
 particular:</p>
 <ul>
-<li><p><span class="xref std std-ref">pyrand.logdet.eigenvalue</span></p></li>
-<li><p><span class="xref std std-ref">pyrand.logdet.cholesky</span></p></li>
-<li><p><span class="xref std std-ref">pyrand.logdet.slq</span></p></li>
+<li><p><a class="reference internal" href="../api/pyrand.logdet.eigenvalue.html#pyrand-logdet-eigenvalue"><span class="std std-ref">pyrand.logdet(method=’eigenvalue’)</span></a></p></li>
+<li><p><a class="reference internal" href="../api/pyrand.logdet.cholesky.html#pyrand-logdet-cholesky"><span class="std std-ref">pyrand.logdet(method=’cholesky’)</span></a></p></li>
+<li><p><a class="reference internal" href="../api/pyrand.logdet.slq.html#pyrand-logdet-slq"><span class="std std-ref">pyrand.logdet(method=’slq’)</span></a></p></li>
 </ul>
 </li>
 <li><p>If <span class="math notranslate nohighlight">\(p &lt; 0\)</span>, see options for <a class="reference internal" href="pyrand.traceinv.html#pyrand.traceinv" title="pyrand.traceinv"><code class="xref py py-func docutils literal notranslate"><span class="pre">pyrand.traceinv()</span></code></a>. In
 particular:</p>
 <ul>
-<li><p><span class="xref std std-ref">pyrand.traceinv.eigenvalue</span></p></li>
-<li><p><span class="xref std std-ref">pyrand.traceinv.cholesky</span></p></li>
-<li><p><span class="xref std std-ref">pyrand.traceinv.hutchinson</span></p></li>
-<li><p><span class="xref std std-ref">pyrand.traceinv.slq</span></p></li>
+<li><p><a class="reference internal" href="../api/pyrand.traceinv.eigenvalue.html#pyrand-traceinv-eigenvalue"><span class="std std-ref">pyrand.traceinv(method=’eigenvalue’)</span></a></p></li>
+<li><p><a class="reference internal" href="../api/pyrand.traceinv.cholesky.html#pyrand-traceinv-cholesky"><span class="std std-ref">pyrand.traceinv(method=’cholesky’)</span></a></p></li>
+<li><p><a class="reference internal" href="../api/pyrand.traceinv.hutchinson.html#pyrand-traceinv-hutchinson"><span class="std std-ref">pyrand.traceinv(method=’hutchinson’)</span></a></p></li>
+<li><p><a class="reference internal" href="../api/pyrand.traceinv.slq.html#pyrand-traceinv-slq"><span class="std std-ref">pyrand.traceinv(method=’slq’)</span></a></p></li>
 </ul>
 </li>
 </ul>
@@ -536,7 +634,7 @@ of <cite>A</cite>.</p></li>
 is the <cite>nnz</cite> divided by size squared.</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">num_inquiries</span></code>: <cite>int</cite>, The size of inquiries of each parameter
 of the linear operator <cite>A</cite>. If <cite>A</cite> is a matrix, this is always
-<cite>1</cite>. For more details see <span class="xref std std-ref">slq method</span>.</p></li>
+<cite>1</cite>. For more details see <a class="reference internal" href="../api/pyrand.logdet.slq.html#pyrand-logdet-slq"><span class="std std-ref">slq method</span></a>.</p></li>
 </ul>
 </dd>
 </dl>
@@ -743,13 +841,13 @@ printed.</p>
 <p><strong>Large Matrix:</strong></p>
 <p>Compute Schatten of a large sparse matrix using <cite>SLQ</cite> method for
 <span class="math notranslate nohighlight">\(p &gt; 0\)</span>. In this case, the computation is passed to
-<span class="xref std std-ref">pyrand.trace.slq</span> function. Note that the SLQ method does not compute
+<a class="reference internal" href="../api/pyrand.trace.slq.html#pyrand-trace-slq"><span class="std std-ref">pyrand.trace(method=’slq’)</span></a> function. Note that the SLQ method does not compute
 norm exactly, rather, the result is an approximation using Monte-Carlo
 sampling. The following example uses at least <cite>100</cite> samples.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>To see options passed to <a class="reference internal" href="#pyrand.schatten" title="pyrand.schatten"><code class="xref py py-func docutils literal notranslate"><span class="pre">pyrand.schatten()</span></code></a> for <span class="math notranslate nohighlight">\(p &gt; 0\)</span> in
-the example below, see the parameters of <span class="xref std std-ref">pyrand.trace.slq</span>
+the example below, see the parameters of <a class="reference internal" href="../api/pyrand.trace.slq.html#pyrand-trace-slq"><span class="std std-ref">pyrand.trace(method=’slq’)</span></a>
 function. In particular, note that the input matrix <cite>A</cite> should be
 symmetric as a requirement to the <cite>SLQ</cite> method.</p>
 </div>
@@ -828,11 +926,11 @@ and zero order <span class="math notranslate nohighlight">\(p\)</span> among oth
               <footer class="bd-footer-article">
                   <!-- Previous / next buttons -->
 <div class='prev-next-area'>
-  <a class='left-prev' id="prev-link" href="pyrand.trace.html" title="previous page">
+  <a class='left-prev' id="prev-link" href="../api/pyrand.trace.slq.html" title="previous page">
       <i class="fas fa-angle-left"></i>
       <div class="prev-next-info">
           <p class="prev-next-subtitle">previous</p>
-          <p class="prev-next-title">pyrand.trace</p>
+          <p class="prev-next-title">pyrand.trace(method=’slq’)</p>
       </div>
   </a>
   <a class='right-next' id="next-link" href="pyrand.InterpolateLogdet.html" title="next page">
